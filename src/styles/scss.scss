@@ -60,10 +60,8 @@ button {
   margin-left: 32px;
   font-weight: 500;
 
-  .sub-header__img {
+  img {
     margin-left: 8px;
-    width: 40px;
-    height: 40px;
   }
 }
 
@@ -89,12 +87,8 @@ button {
 
 .main-image {
   flex: 1;
-  //background-image: url("./assets/mp.png");
-  //background-size: contain;
-  //background-origin: content-box;
-  //background-repeat: no-repeat;
-  width: 530px;
-  height: 340px;
+  width: 45%;
+  height: 45%;
   border-radius: 10px;
   margin: 0 calc(30%/1120*100);
 }
