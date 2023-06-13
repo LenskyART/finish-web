@@ -1,9 +1,14 @@
 @import "fonts/stylesheet.css";
+@import "aside.scss";
+@import "mySlyder";
+
+@media (max-width: 1440px) {
+  .sidebar {
+    display: none;
+  }
+}
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
   font-family: 'TT Lakes', sans-serif;
 }
 
@@ -12,14 +17,13 @@ body {
   scrollbar-gutter: both-edges;
 }
 
-.container, .nav, section{
+.sub-header__container, .nav, section{
   display: flex;
   flex-flow: row nowrap;
 }
 
 .sub-header {
-  padding: 0 calc(30%/1120*100);
-  margin: 34px 0 15px;
+  padding: 34px calc(30%/1120*100) 15px;
   display: flex;
   flex-flow: column nowrap;
 }
