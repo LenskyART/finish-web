@@ -18,6 +18,7 @@ body {
 
 @import "fonts/stylesheet.css";
 @import "aside.scss";
+@import "price.scss";
 
 @media (min-width: 1440px) {
   .wrapper {
@@ -130,6 +131,7 @@ button {
   display: flex;
   white-space: nowrap;
   align-items: center;
+  font-weight: bold;
 
   .exp__img {
     width: 24px;
