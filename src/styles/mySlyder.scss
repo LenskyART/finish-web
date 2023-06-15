@@ -82,7 +82,7 @@
   justify-content: left;
   align-items: center;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .expand__txt {
@@ -98,7 +98,7 @@
   margin: 0 16px;
 }
 
-.swiper-pagination1, .swiper-pagination2 {
+.swiper-pagination1, .swiper-pagination2, .swiper-pagination3 {
   position: unset;
   margin: 16px;
   display: flex;
