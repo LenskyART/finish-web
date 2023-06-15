@@ -18,6 +18,20 @@ module.exports = {
                 collapseWhitespace: false
             },
         }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src/feedback/feedback.html'),
+            filename: 'feedback.html',
+            minify: {
+                collapseWhitespace: false
+            },
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src/call/call.html'),
+            filename: 'call.html',
+            minify: {
+                collapseWhitespace: false
+            },
+        }),
     ],
     module: {
         rules: [

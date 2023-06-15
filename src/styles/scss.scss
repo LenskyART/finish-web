@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  height: 100%;
   font-family: 'TT Lakes', sans-serif;
   background: #F8F8F8;
   scrollbar-gutter: both-edges;
@@ -20,6 +21,7 @@ body {
 @import "fonts/stylesheet.css";
 @import "aside.scss";
 @import "price.scss";
+@import "../feedback/feedback.scss";
 
 @media (min-width: 1440px) {
   .wrapper {
@@ -31,6 +33,10 @@ body {
   .sidebar {
     display: none;
   }
+}
+
+.clear {
+  clear: both;
 }
 
 .sub-header__container, .nav, section{
