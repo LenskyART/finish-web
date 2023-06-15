@@ -6,6 +6,7 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: #1B1C21;
 }
 
 body {
@@ -118,7 +119,6 @@ button {
 
   p {
     font-size: 14px;
-    color: #1B1C21;
     margin-bottom: 15px;
     line-height: 20px;
     font-weight: 400;
@@ -127,7 +127,6 @@ button {
 
 .article__exp {
   font-size: 16px;
-  color: #1B1C21;
   display: flex;
   white-space: nowrap;
   align-items: center;
@@ -223,6 +222,22 @@ button {
     }
   }
 }
+
+.button_pink {
+    width: 119px !important;
+    height: 32px !important;
+    background-color: #ff3e79;
+    border-radius: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+    img {
+      margin-left: 16px;
+    }
+  }
 
 @media (max-width: 1440px) {
   .header {
