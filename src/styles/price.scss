@@ -72,3 +72,29 @@
   align-items: center;
   text-transform: uppercase;
 }
+
+.price__slider {
+  padding: 16px;
+  width: 260px;
+  height: 200px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+
+  p {
+    font-size: 14px;
+    line-height: 18px;
+
+    span {
+      color: #7e7e82;
+      line-height: 16px;
+    }
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

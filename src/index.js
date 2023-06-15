@@ -4,6 +4,7 @@ import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 import "./styles/mySlyder.scss";
 import "./swiper2"
+import "./swiper3"
 
 let swiper1 = Swiper;
 let init = false;
