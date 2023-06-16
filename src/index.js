@@ -112,10 +112,12 @@ const blur = document.getElementsByClassName('blur')[0]
 let hiddenMenu = true
 function openMenu() {
   if (hiddenMenu) {
+    document.getElementById('body').style.overflow = 'hidden'
     menu.classList.add('sidebar_open')
     wrapper.classList.add('wrapper_trans')
     blur.classList.add('blur_on')
   } else {
+    document.getElementById('body').style.overflow = 'unset'
     menu.classList.remove('sidebar_open')
     wrapper.classList.remove('wrapper_trans')
     blur.classList.remove('blur_on')
