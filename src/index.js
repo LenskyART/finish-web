@@ -41,43 +41,68 @@ window.addEventListener("resize", function () {
   swiperMode();
 });
 
-const expand = document.getElementsByClassName('expand-brand')
-const img = document.getElementsByClassName('expand__img')
-const flex = document.getElementsByClassName('main')
-
-let hidden = false
-function roll() {
-  hidden = !hidden
-  if (hidden) {
-    flex[0].style.height = 'auto'
-    img[0].classList.add('rotate')
-    document.getElementsByClassName('expand__txt')[0]
-      .innerHTML = 'Скрыть'
-  } else {
-    flex[0].style.height = '160px'
-    img[0].classList.remove('rotate')
-    document.getElementsByClassName('expand__txt')[0]
-      .innerHTML = 'Показать все'
+const expands = document.getElementsByClassName('expand-brand')
+  for (let expand of expands) {
+    expand.hidden = true
   }
-}
-expand[0].addEventListener('click', roll)
+const expandImg = document.getElementsByClassName('expand__img')
+const expandFlex = document.getElementsByClassName('main')
+const expandTxt = document.getElementsByClassName('expand__txt')
 
-let hiddenDev = false
-function rollDev() {
-  hiddenDev = !hiddenDev
-  if (hiddenDev) {
-    flex[1].style.height = 'auto'
-    img[1].classList.add('rotate')
-    document.getElementsByClassName('expand__txt')[1]
-      .innerHTML = 'Скрыть'
+
+function roll(exp) {
+  if (expands[exp].hidden) {
+  expandFlex[exp].style.height = 'auto'
+    expandImg[exp].classList.add('rotate')
+    expandTxt[exp].innerHTML = 'Скрыть'
   } else {
-    flex[1].style.height = '160px'
-    img[1].classList.remove('rotate')
-    document.getElementsByClassName('expand__txt')[1]
-      .innerHTML = 'Показать все'
+    expandFlex[exp].style.height = '160px'
+    expandImg[exp].classList.remove('rotate')
+    expandTxt[exp].innerHTML = 'Показать все'
   }
+  expands[exp].hidden = !expands[exp].hidden
 }
-expand[1].addEventListener('click', rollDev)
+
+for (let i = 0; i < 2; i++) {
+  expands[i].addEventListener('click', roll.bind(null, i))
+}
+
+
+// let hiddenBrand = false
+// function roll() {
+//   hiddenBrand = !hiddenBrand
+//   if (hiddenBrand) {
+//     expandFlex[0].style.height = 'auto'
+//     expandImg[0].classList.add('rotate')
+//     expandTxt[0].innerHTML = 'Скрыть'
+//   } else {
+//     expandFlex[0].style.height = '160px'
+//     expandImg[0].classList.remove('rotate')
+//     expandTxt[0].innerHTML = 'Показать все'
+//   }
+// }
+// expand[0].addEventListener('click', roll)
+//
+// let hiddenDevice = false
+// function rollDev() {
+//   hiddenDevice = !hiddenDevice
+//   if (hiddenDevice) {
+//     expandFlex[1].style.height = 'auto'
+//     expandImg[1].classList.add('rotate')
+//     expandTxt[1].innerHTML = 'Скрыть'
+//
+//   } else {
+//     expandFlex[1].style.height = '160px'
+//     expandImg[1].classList.remove('rotate')
+//     expandTxt[1].innerHTML = 'Показать все'
+//
+//   }
+// }
+// expand[1].addEventListener('click', rollDev)
+
+
+
+
 
 const openMenuBtn = document.getElementsByClassName('openMenuBtn')
 const menu = document.getElementsByClassName('sidebar')[0]
