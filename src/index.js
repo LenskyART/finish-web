@@ -79,3 +79,25 @@ function rollDev() {
 }
 expand[1].addEventListener('click', rollDev)
 
+const openMenuBtn = document.getElementsByClassName('openMenuBtn')
+const menu = document.getElementsByClassName('sidebar')[0]
+const wrapper = document.getElementsByClassName('wrapper')[0]
+const blur = document.getElementsByClassName('blur')[0]
+
+let hiddenMenu = true
+function openMenu() {
+  if (hiddenMenu) {
+    menu.classList.add('sidebar_open')
+    wrapper.classList.add('wrapper_trans')
+    blur.classList.add('blur_on')
+  } else {
+    menu.classList.remove('sidebar_open')
+    wrapper.classList.remove('wrapper_trans')
+    blur.classList.remove('blur_on')
+  }
+  hiddenMenu =!hiddenMenu
+}
+
+for (let btn of openMenuBtn) {
+  btn.addEventListener('click', openMenu)
+}
