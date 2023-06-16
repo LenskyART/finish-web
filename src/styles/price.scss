@@ -15,7 +15,7 @@
   padding: 16px;
 
   p {
-    color: #7e7e82;
+    color: $text-gray;
     flex: 1 10;
 
     &:first-child {
@@ -30,8 +30,8 @@
 }
 
 .price__row {
-  background-color: #fff;
-  border-bottom: 1px solid #eaeaea;
+  background-color: $white;
+  border-bottom: 1px solid $divider-gray;
   display: flex;
   flex-flow: nowrap;
   justify-content: space-between;
@@ -48,7 +48,7 @@
   }
 
   p {
-    color: #1B1C21;
+    color: $text-black;
     flex: 1 10;
 
 
@@ -65,7 +65,7 @@
   padding: 16px;
   width: 260px !important;
   height: 200px !important;
-  background-color: #fff;
+  background-color: $white;
   display: flex !important;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -75,7 +75,7 @@
     line-height: 18px;
 
     span {
-      color: #7e7e82;
+      color: $text-gray;
       line-height: 16px;
     }
   }

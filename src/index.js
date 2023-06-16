@@ -2,7 +2,6 @@ import './styles/scss.scss';
 import { Pagination } from "swiper";
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
-import "./styles/mySlyder.scss";
 import "./swiper2"
 import "./swiper3"
 

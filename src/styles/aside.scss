@@ -5,8 +5,8 @@
   padding: 24px;
   display: flex;
   flex-flow: nowrap column;
-  background-color: #f2f2f2;
-  color: #1b1c21;
+  background-color: $sideBar-gray;
+  color: $text-black;
   font-size: 16px;
   position: fixed;
   overflow-Y: scroll;
@@ -41,7 +41,7 @@ ul {
 }
 
 .menu__item_active {
-  color: #7E7E82;
+  color: $text-gray;
 
   &:before {
     content: "";
@@ -50,7 +50,7 @@ ul {
     left: 0;
     width: 4px;
     height: 32px;
-    background-color: #41F6D7;
+    background-color: $selection-green;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
   }
@@ -82,7 +82,7 @@ ul {
 }
 
 .lang__item_active {
-  color: #7E7E82;
+  color: $text-gray;
 }
 
 .sidebar__button {
