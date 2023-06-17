@@ -62,7 +62,7 @@ function roll(exp) {
   expands[exp].hidden = !expands[exp].hidden
 }
 
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < expands.length; i++) {
   expands[i].addEventListener('click', roll.bind(null, i))
 }
 

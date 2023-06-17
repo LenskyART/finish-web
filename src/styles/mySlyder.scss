@@ -41,9 +41,9 @@
 }
 
 .main__brand {
-  width: 240px;
-  height: 72px;
-  display: flex;
+  width: 240px !important;
+  height: 72px !important;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   border: 1px solid $divider-gray;
@@ -54,9 +54,9 @@
 
 
 .main__device {
-  width: 240px;
-  height: 160px;
-  display: flex;
+  width: 240px !important;
+  height: 160px !important;
+  display: flex !important;
   flex-flow: column;
   justify-content: space-between;
   background-color: $white;
